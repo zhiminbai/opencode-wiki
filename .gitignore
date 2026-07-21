@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# OpenCode tool state
+.opencode/
+opencode.json
+
+# Tool auto-generated config
+config/
+
+# GStack tool artifacts
+.gstack/
+
+# Exported files (docx, pdf, etc.)
+exports/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+
+# Empty placeholder (no actual dependencies or build scripts)
+package.json
+package-lock.json

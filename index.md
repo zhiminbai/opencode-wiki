@@ -30,6 +30,12 @@ Daily research wiki for OpenCode — finance (金融), product (产品), daily l
 
 - [[concepts/学习/学习新事物的心理模型]] — 学习新技能的预期管理：恐怖之山→对数平台期，练习≠进步，睡眠才是关键
 - [[concepts/学习/费曼算法与思考后台进程]] — 费曼算法：输入→后台处理→输出，思考作为后台进程模型
+- [[concepts/学习/利手偏侧化]] — 左撇子比例（~10%）、右撇子主导的脑偏侧化解释及其他理论
+- [[concepts/学习/希尔伯特23问题]] — 希尔伯特1900年提出的23个数学问题列表、解决状况与重要性排序
+- [[concepts/学习/黎曼猜想]] — 黎曼ζ函数、零点分布、与素数分布的关系、未解原因
+- [[concepts/学习/希尔伯特第六问题]] — 物理公理化的进展：概率论→经典力学→量子力学→量子引力，含2026年邓煜突破
+- [[entities/学习/邓煜]] — 2026年菲尔兹奖得主，首位中国籍获奖者，严格推导玻尔兹曼方程完成希尔伯特第6问题气体动力学纲领
+- [[sources/学习/希尔伯特23问题]] — 希尔伯特23问题原始来源与解决状况一览
 
 ## 阅读 / Reading
 
@@ -47,6 +53,8 @@ Daily research wiki for OpenCode — finance (金融), product (产品), daily l
 - [[sources/阅读/你应该学点东西]] — Marginalia: "Maybe you should learn something" 全文翻译
 - [[sources/阅读/费曼的花园]] — Marginalia: "Feynman's Garden" 全文翻译
 - [[sources/阅读/LinkedIn同人小说]] — Marginalia: "LinkedIn fanfiction" 全文翻译（讽刺）
+- [[sources/阅读/戏为六绝句]] — 杜甫《戏为六绝句》全文
+- [[concepts/阅读/戏为六绝句]] — 历史背景、意象分析（翡翠兰苕/掣鲸碧海）、文学主张、论诗诗开创意义
 
 
 ## Unprocessed

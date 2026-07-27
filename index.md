@@ -1,4 +1,4 @@
-# opencode-wiki
+# LLM-Wiki
 
 Daily research wiki for OpenCode — finance (金融), product (产品), daily life (生活), learning (学习), reading (阅读).
 
@@ -6,7 +6,7 @@ Daily research wiki for OpenCode — finance (金融), product (产品), daily l
 
 - [[concepts/金融/LPR]] — 贷款市场报价利率（LPR）定义、形成机制、历史走势及与贷款利率关系
 - [[concepts/金融/催告函]] — 金融产品催收环节中的正式债务催促通知，法律效力、发送方式及行业规范
-- [[concepts/金融/消费贷款监管要求]] — 消费贷款监管框架：区域经营限制（87号文→24号文→8号文完整时间线） + 助贷新规 + 24号文全文
+- [[concepts/金融/消费贷款监管要求]] — 消费贷款监管框架：区域经营限制（87号文→24号文→8号文完整时间线） + 助贷新规 + 执行动态（约谈/处罚/司法判例/国资入主/监管指标）
 - [[concepts/金融/消费贷款县域投放策略]] — 江苏省35县域消费贷款投放优选框架：特色产业锚点、自下而上渠道、分梯队时间安排
 - [[concepts/金融/消费贷款提前还款挽留策略]] — 优惠券提前还款挽留弹窗：5个市场案例 + 4套弹窗文案方案（损失清单型/顾问型/紧迫型/合规型）
 - [[concepts/金融/网络营销监管要求]] — 金融产品网络营销与互联网广告监管法规体系
@@ -25,6 +25,10 @@ Daily research wiki for OpenCode — finance (金融), product (产品), daily l
 - [[concepts/生活/台风与飓风]] — 区别、风力对比与历史最强记录
 - [[concepts/生活/南京房贷政策]] — 南京商业贷款与公积金贷款政策（2026年中）
 - [[sources/生活/南京房贷政策]] — 南京房贷政策文件一览
+- [[concepts/生活/银行产品经理求职策略]] — 南京银行总行/华泰证券求职策略：招聘市场扫描、面试核心框架、职业叙事话术、关键追问应对
+- [[concepts/生活/奥德赛时刻]] — 奥德赛岁月：当代年轻人从青春期到成年之间的漫长探索与过渡期，David Brooks 提出，含社会学背景与中国语境
+- [[exports/简历_银行个贷产品经理]] — 针对南京银行总行运营管理岗/华泰证券的定制简历（Markdown版）
+- [[synthesis/生活/2026年7-8月搬家吉日分析]] — 全家7口（3龙2虎1鼠1蛇）2026年搬家择日完整分析
 
 ## 学习 / Learning
 
@@ -36,6 +40,9 @@ Daily research wiki for OpenCode — finance (金融), product (产品), daily l
 - [[concepts/学习/希尔伯特第六问题]] — 物理公理化的进展：概率论→经典力学→量子力学→量子引力，含2026年邓煜突破
 - [[entities/学习/邓煜]] — 2026年菲尔兹奖得主，首位中国籍获奖者，严格推导玻尔兹曼方程完成希尔伯特第6问题气体动力学纲领
 - [[sources/学习/希尔伯特23问题]] — 希尔伯特23问题原始来源与解决状况一览
+- [[sources/学习/Transformer论文]] — Attention Is All You Need 论文：Transformer 架构提出，完全基于注意力机制，SOTA 机器翻译结果（2017）
+- [[concepts/学习/Transformer架构]] — Transformer 架构详解：Scaled Dot-Product Attention、Multi-Head Attention、Positional Encoding、Encoder-Decoder 结构
+- [[concepts/学习/LLM SOTA模型2026-07]] — 2026年7月 LLM SOTA 模型全景：综合排名、编码/推理/多模态/开源分赛道冠军，基于 BenchLM/LMArena/SWE-bench 多榜数据
 
 ## 阅读 / Reading
 

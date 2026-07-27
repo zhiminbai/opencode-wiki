@@ -1,4 +1,4 @@
-# opencode-wiki — Agent Guide
+# LLM-Wiki — Agent Guide
 
 **What this is:** A daily-research wiki for OpenCode. Covers finance (金融),
 product knowledge (产品), daily life (生活), learning (学习), and

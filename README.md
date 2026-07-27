@@ -1,4 +1,4 @@
-# opencode-wiki
+# LLM-wiki
 
 Daily research wiki for OpenCode. Follows the Karpathy LLM-Wiki three-layer pattern.
 

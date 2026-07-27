@@ -23,6 +23,11 @@
   - Special rules for consumer finance companies (担保增信≤50%)
 - Updated `index.md` and `log.md`
 
+## [2026-07-26] Ingest | 奥德赛时刻概念
+- Researched the concept of Odyssey Years (奥德赛时刻) — David Brooks' 2011 Atlantic article, Jeffrey Arnett's Emerging Adulthood theory, Chinese parallels (慢就业/间隔年/斜杠青年)
+- Created `concepts/生活/奥德赛时刻.md` — definition, core characteristics, three types (explorer/delayer/creator), sociological background, Chinese context, criticisms, Odyssey metaphor analysis
+- Updated `index.md` with new entry
+
 ## [2026-07-05] Ingest | 网络营销监管要求
 - Researched online marketing regulatory framework for financial products
 - Key finding: 《金融产品网络营销管理办法》(8 ministries, effective 2026-09-30) is the most relevant document given the user's focus on consumer loans and loan facilitation
@@ -219,3 +224,45 @@
 - Created `entities/阅读/百里奚.md` — 生平（虞国大夫→陪嫁奴隶→五羖大夫→辅秦穆公称霸西戎）、治国风格、历史评价（孔子/孟子/司马迁/赵良）、与蹇叔关系
 - Created `entities/阅读/孙叔敖.md` — 生平（楚国贵族→两头蛇传说→令尹）、水利建设（芍陂/安丰塘，中国最早水利工程师）、政治经济贡献、廉洁与明智、历史评价（司马迁循吏之首/孟子）
 - Updated `index.md`（阅读板块新增两条）和 `log.md`
+
+## [2026-07-25] Ingest | Transformer 论文
+- 摄入 "Attention Is All You Need" (Vaswani et al., NeurIPS 2017) 论文总结
+- Created `sources/学习/Transformer论文.md` — 论文基本信息、核心创新、架构概览、实验结果
+- Created `concepts/学习/Transformer架构.md` — Scaled Dot-Product Attention、Multi-Head Attention、Positional Encoding、Encoder-Decoder 结构详解
+- Updated `index.md`（学习板块新增两条）和 `log.md`
+
+## [2026-07-25] Ingest | LLM SOTA 模型 2026-07 概况
+- Created `concepts/学习/LLM SOTA模型2026-07.md` — 2026 年 7 月 LLM SOTA 模型全景：BenchAlign 综合 Top 10、编码/推理/多模态/Arena/竞技编程/开源分赛道冠军、六大格局判断
+- Updated `index.md`（学习板块新增一条）和 `log.md`
+
+## [2026-07-25] Concept | 银行产品经理求职策略
+- 扫描南京金融招聘市场：南京银行总行、江苏农商联合银行、华泰证券等机构的最新社招信息
+- 设计面试核心框架：能力拼图叙事、职业中断解释（付费MBA定位）、5个关键追问回答策略
+- Created `concepts/生活/银行产品经理求职策略.md` — 招聘市场扫描 + 面试框架 + 简历优化原则 + 投递策略优先级
+- Updated `index.md`（生活板块新增一条）和 `log.md`
+
+## [2026-07-26] Update | 银行产品经理求职策略
+- 补充苏商银行当前职责详情（产品层面：线下进件产品规划设计；运营层面：线下业务经理及客群中心评测流程）
+- 更新苏商银行职责描述：产品方向明确为"视频贷（在线金融）"，运营方向修正为"线下客户经理运营策略+线上运营流程+运营管理机制建设"；补充业绩：产品余额达40亿
+- Regenerated `exports/银行产品经理求职面试策略.pdf`
+- Updated `concepts/生活/银行产品经理求职策略.md` 个人背景章节
+
+## [2026-07-26] Resume | 生成定制简历
+- 基于wiki专业经验技能简介生成完整简历 `exports/简历_银行个贷产品经理.md`
+- 简历结构：基本信息 → 专业经验技能简介（能力矩阵） → 工作经历（苏商银行/孩子王/政府平台/江苏银行按时间倒序） → 项目亮点（市民贷40亿） → 学历
+- 目标岗位：南京银行总行运营管理部流程管理岗、零售金融部产品经理岗
+- Updated `index.md` 新增简历条目
+
+## [2026-07-26] Synthesis | 2026年7-8月搬家吉日分析
+- Created `synthesis/生活/2026年7-8月搬家吉日分析.md` — 全家7口（3龙2虎1鼠1蛇）搬家择日：推算7月底至8月初各日干支、分析六冲六合三合关系、推荐8月3日/8月7日/7月29日为首选吉日（全家无冲）、标注5个需避开的日子及原因
+- Updated `index.md` (生活板块新增一条) 和 `log.md`
+
+## [2026-07-27] Update | 消费贷款监管要求 — 民营银行近期监管动态
+- Researched 2025H2-2026H1 监管动态，@librarian 输出结构化报告
+- Updated `concepts/金融/消费贷款监管要求.md`:
+  - 1.4 国资入主潮更新：4家/19家（+裕民59.5%、亿联引入吉林金控）、驱动因素
+  - 1.6 司法判例扩展：3个判例对比（振兴银行×/蓝海银行×/锡商银行✓）、锡商银行约谈详细经过、行政处罚案例
+  - 新增2.3 助贷新规执行动态：北京地方细则、5家平台约谈、市场影响（银行压降/平台离场/数禾亏损）
+  - 新增2.4 《个人贷款业务明示综合融资成本规定》（2026-08-01实施）
+  - 新增第四章 民营银行经营与处罚动态：7家/813.9万处罚分析、不良率（1.89%）、净息差（3.62%）、资本充足率（12.55%）最新数据
+- Updated `index.md`（条目标题补充）和 `log.md`

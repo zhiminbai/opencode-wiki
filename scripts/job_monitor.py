@@ -277,6 +277,60 @@ def send_email(new_jobs: list[dict]):
         return False
 
 
+# ─── 企业微信机器人推送 ──────────────────────────────
+
+WECOM_KEY = os.environ.get("WECOM_KEY", "")
+WECOM_URL = f"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key={WECOM_KEY}"
+
+
+def send_wecom(new_jobs: list[dict]):
+    """通过企业微信机器人发送新岗位通知"""
+    if not WECOM_KEY:
+        print("[INFO] 企业微信机器人未配置，跳过推送")
+        return False
+
+    now = datetime.now().strftime("%Y-%m-%d")
+    count = len(new_jobs)
+
+    # 构建 Markdown 消息（企微机器人支持的格式）
+    lines = [
+        f"## 🔔 银行产品经理岗位监控",
+        f"**{now}**  |  新增 **{count}** 个匹配岗位",
+        "",
+    ]
+
+    for i, job in enumerate(new_jobs[:10], 1):  # 最多推 10 条
+        lines.append(f"{i}. [{job['title']}]({job['url']})")
+        lines.append(f"> {job['date']} | {job['reason']}")
+
+    if len(new_jobs) > 10:
+        lines.append(f"")
+        lines.append(f"> 更多 {len(new_jobs) - 10} 条请查看邮件")
+
+    payload = {
+        "msgtype": "markdown",
+        "markdown": {
+            "content": "\n".join(lines)
+        }
+    }
+
+    try:
+        req = Request(WECOM_URL, data=json.dumps(payload).encode("utf-8"),
+                      headers={"Content-Type": "application/json"})
+        with urlopen(req, timeout=10) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            if result.get("errcode") == 0:
+                print(f"[OK] 企业微信推送成功")
+                return True
+            else:
+                print(f"[ERROR] 企业微信推送失败: {result}")
+                return False
+    except Exception as e:
+        print(f"[ERROR] 企业微信推送异常: {e}")
+        return False
+
+
+
 # ─── 主流程 ──────────────────────────────────────────
 
 def main():
@@ -334,12 +388,13 @@ def main():
     seen["total_seen"] = len(seen["job_ids"])
     save_seen(seen)
 
-    # 发送邮件
+    # 发送通知
     if matched:
-        print(f"\n发送邮件: {len(matched)} 个新岗位")
+        print(f"\n发送通知: {len(matched)} 个新岗位")
         send_email(matched)
+        send_wecom(matched)
     else:
-        print(f"\n无新岗位，跳过邮件")
+        print(f"\n无新岗位，跳过通知")
 
     print(f"\n完成。seen_jobs.json 已更新 ({seen['total_seen']} 条已记录)")
 

@@ -24,6 +24,7 @@ jobs:
         env:
           QQ_SMTP_USER: ${{ secrets.QQ_SMTP_USER }}
           QQ_SMTP_PASS: ${{ secrets.QQ_SMTP_PASS }}
+          WECOM_KEY: ${{ secrets.WECOM_KEY }}
         run: python3 scripts/job_monitor.py
 
       - name: Commit updated seen_jobs

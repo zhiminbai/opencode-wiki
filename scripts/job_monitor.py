@@ -300,7 +300,10 @@ def send_wecom(new_jobs: list[dict]):
     ]
 
     for i, job in enumerate(new_jobs[:10], 1):  # 最多推 10 条
-        lines.append(f"{i}. [{job['title']}]({job['url']})")
+        # 标题中的 [] 会破坏 Markdown 链接语法，替换为 【】
+        safe_title = job['title'].replace('[', '【').replace(']', '】')
+        safe_url = job['url'].replace(')', '%29')  # URL 中的 ) 也可能破坏语法
+        lines.append(f"{i}. [{safe_title}]({safe_url})")
         lines.append(f"> {job['date']} | {job['reason']}")
 
     if len(new_jobs) > 10:
